@@ -1,0 +1,48 @@
+1)🚀 No Docker Hub, utilizando a caixa de busca ("Search for great content"), busque pela imagem da Distribuição Linux Debian.
+r: https://hub.docker.com/_/debian
+
+2)🚀 Uma vez que encontrar a imagem oficial, acesse-a (clicando em seu card) e verifique na página de detalhes. Confira se existe algum comando para baixar a imagem localmente sem ter que criar um contêiner para isso.
+r: docker pull debian
+
+3)🚀 Baixe a imagem utilizando a tag: stable-slim, que é uma versão reduzida da distribuição.
+r: docker pull debian:stable-slim 
+
+4)🚀 Após baixar a imagem para seu computador local, crie e execute um contêiner no modo interativo utilizando essa imagem como referência — não esqueça referenciar a tag.
+r: docker container run -it debian:stable-slim
+
+
+5) 🚀 No terminal, você deve conseguir rodar o comando cat /etc/*-release, que vai retornar os dados da distribuição Debian que está sendo rodada dentro do contêiner.
+r:  docker container run -it debian:stable-slim
+
+6) 🚀 Encerre o terminal.
+r: exit
+
+7) 🚀 Verifique na sua lista de contêiners qual contêiner se refere ao exercício que acabou de praticar.
+r: docker container ls -a (veja o ID)
+
+8) 🚀 Inicie o mesmo contêiner novamente, sem criar outro. Valide se ele está ativo na lista de contêiners.
+r: docker start 1561c8d02cca || NAMES
+docker container ls -a (STATUS Up 18 seconds)
+
+9) 🚀 Retome o contêiner que foi criado anteriormente neste exercício.
+r: docker attach 1561c8d02cca
+
+10) 🚀 Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do contêiner.
+r:  cat /etc/debian_version
+versão 11.5
+
+11) 🚀 Encerre o terminal.
+r: exit
+
+12) 🚀 Remova somente o contêiner criado para esse exercício.
+r: docker container rm ID
+
+13) [BÔNUS] Crie e rode de modo interativo em modo ‘Cleanup’, a imagem andrius/ascii-patrol.
+r: docker run -it --rm andrius/ascii-patrol
+
+
+14) [BÔNUS] **Encerre o contêiner utilizando os botões [ctrl] + [c].
+r: CTRL + C
+
+
+
