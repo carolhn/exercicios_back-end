@@ -5,6 +5,7 @@
 **Seção 01: Docker: utilizando Containers**<br>
  ▫️1.1 Utilizando Containers - Docker<br>
  ▫️1.2 Manipulando Imagens no Docker<br>
+ ▫️1.3 Orquestrando Containers com Docker Compose<br>
  
  
  ----
