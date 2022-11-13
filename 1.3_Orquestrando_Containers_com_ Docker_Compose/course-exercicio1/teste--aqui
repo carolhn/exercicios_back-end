@@ -1,0 +1,11 @@
+FROM node:14-alpine AS todobackend
+
+EXPOSE 3001
+
+ADD node_modules.tar.gz .
+
+COPY back-end ./docker/todo-app/back-end/Dockerfile
+
+RUN npm install
+
+CMD ["npm", "start"]
