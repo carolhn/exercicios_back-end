@@ -1,0 +1,48 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: frontend/
+    restart: on-failure
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+  backend:
+    build: backend/
+    restart: on-failure
+    ports:
+      - 3001:3001
+    environment:
+      - DB_HOST=database
+    depends_on:
+      - database
+  database:
+    image: betrybe/docker-compose-example-database:v1
+    restart: on-failure
+
+#parte1- Todo arquivo docker-compose.yaml deve iniciar com a chave version
+#parte2 - a chave serviços:
+#parte3 - duild: ele especifica a pasta contendo um arquivo Dockerfile EXECUTANDO COMANDO docker duild automaticamente
+#parte4 - database / image: comporta a imagem a ser carregada
+#parte5 - ports: a porta da nossa aplicação: porta do container
+
+#parte6 - politica de reinicialização: acontece caso algum container pare de funcionar
+#parte7 - restart: 4 opções (on-failure, caso aconteca alguma falha o container será reiniciado)
+
+#parte8 - environment: é uma referencia ao database recebedo como valor
+#parte9 - depends_on: ordem de serviços que seŕa executado primeiro.
+
+#parte10- rodar nosso codigo: no terminal        docker-compose up
+#parte11- verificar o status da aplicação        docker-compose ps
+
+#--------------------------------------------------------------------
+#RECONSTRUINDO A IMAGEM DOCKER
+#Muitas vezes precisamos reconstruir a imagem, ou seja forçar a execução do (docker build) para isso vamos fazer algumas alterações...
+
+#dockerfile/front: vamos substituir a linha de codigo ENTRYPOINT
+#no terminal: utilizar o comando para atualizar o front-end         docker-compose up -d --build
+
+
+#parar a execução/descer:           docker-compose down
+#executar um serviço especifico:    docker-compose up backend
