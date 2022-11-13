@@ -9,7 +9,7 @@
  
  
  **Seção 02: Introdução à SQL**<br>
- ▫️2.1 anco de dados SQL<br>
+ ▫️2.1 Banco de dados SQL<br>
  
  ----
 
