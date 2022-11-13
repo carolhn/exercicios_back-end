@@ -8,6 +8,9 @@
  ▫️1.3 Orquestrando Containers com Docker Compose<br>
  
  
+ **Seção 02: Introdução à SQL**<br>
+ ▫️2.1 anco de dados SQL<br>
+ 
  ----
 
 ### 🔗️ Links:
