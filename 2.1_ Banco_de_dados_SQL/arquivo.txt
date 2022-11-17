@@ -1,0 +1,18 @@
+1) como executar o MYSQL pelo terminal:
+docker run --name carol -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 --platform linux/x86_64 -d mysql:5.7
+
+2) como entrar no terminal do SQL
+docker exec -it ID bash
+
+bash-4.2# mysql -u root -p
+
+Enter password: password
+
+3) quais os bancos de dados tenho na minha base?
+mysql> show databases;
+
+4)como parar e remover um container:
+ docker stop $(docker ps -aq)
+ docker rm $(docker ps -aq)
+
+5) 
