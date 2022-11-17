@@ -1,0 +1,27 @@
+Exercício 1: Descubra como fazer uma pesquisa em qualquer tabela sem utilizar uma linha de código usando o MySql Workbench.
+r: sakila > tables > actor > outro lado do mouse > “select rows - limit 200”
+
+Exercício 2: Descubra como é possível criar uma tabela sem usar código SQL usando o MySql Workbench.
+r: Na barra lateral esquerda, clicar em tables com o botão direito e em seguida clicar em Create Table
+
+Exercício 3: Feito isso, crie uma tabela com as seguintes restrições:
+r: imagem1
+
+Exercício 4: Analise a tabela city e encontre a tabela à qual a coluna country_id faz referência.
+r: tabela country
+
+Exercício 5: Após resolver o exercício anterior, responda: qual tipo de relacionamento a tabela city faz com a tabela country?
+r: N:1 porq são varias cidades por 1 ID
+
+Exercício 6: Qual tipo de relacionamento a tabela country faz com a tabela city?
+R: 1:N um pais para varias cidades
+
+Exercício 7: Abra tabela por tabela do banco sakila e encontre no mínimo 3 exemplos de um relacionamentos 1:N ou N:1.
+r: 1:N
+film -> Language
+country -> city
+store -> staff
+
+
+
+
