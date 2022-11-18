@@ -11,6 +11,7 @@
  **Seção 02: Introdução à SQL**<br>
  ▫️2.1 Banco de dados SQL<br>
  ▫️2.2 Encontrando dados em um banco de dados<br>
+ ▫️2.3 Filtrando dados de forma específica<br>
  
  
  ----
