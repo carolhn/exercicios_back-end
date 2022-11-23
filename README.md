@@ -14,6 +14,8 @@
  ▫️2.3 Filtrando dados de forma específica<br>
  ▫️2.4 Manipulando tabelas<br>
  
+**Seção 03: Funções SQL, JOINs e Normalização**<br>
+ ▫️3.1 Funções mais usadas no SQL<br>
  
  ----
 
