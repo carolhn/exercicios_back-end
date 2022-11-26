@@ -16,6 +16,7 @@
  
 **Seção 03: Funções SQL, JOINs e Normalização**<br>
  ▫️3.1 Funções mais usadas no SQL<br>
+ ▫️3.2 Descomplicando JOINs<br>
  
  ----
 
