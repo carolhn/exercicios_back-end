@@ -17,7 +17,7 @@
 **Seção 03: Funções SQL, JOINs e Normalização**<br>
  ▫️3.1 Funções mais usadas no SQL<br>
  ▫️3.2 Descomplicando JOINs<br>
- ▫️3.2 Transformando ideias em um modelo de banco de dados<br>
+ ▫️3.3 Transformando ideias em um modelo de banco de dados<br>
 
  
  ----
