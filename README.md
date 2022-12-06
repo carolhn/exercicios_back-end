@@ -18,6 +18,10 @@
  ▫️3.1 Funções mais usadas no SQL<br>
  ▫️3.2 Descomplicando JOINs<br>
  ▫️3.3 Transformando ideias em um modelo de banco de dados<br>
+ 
+ **Seção 04: Introdução a Node.js**<br>
+ ▫️4.1 Node.js: Runtime Assíncrono<br>
+
 
  
  ----
