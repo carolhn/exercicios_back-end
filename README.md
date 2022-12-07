@@ -21,6 +21,8 @@
  
  **Seção 04: Introdução a Node.js**<br>
  ▫️4.1 Node.js: Runtime Assíncrono<br>
+ ▫️4.2 Node.js: API REST com Express<br>
+
 
 
  
