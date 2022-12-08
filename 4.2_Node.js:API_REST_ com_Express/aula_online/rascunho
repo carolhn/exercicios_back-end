@@ -1,0 +1,9 @@
+HTTP - é um protocolo para transferir documentos de um computador para outro pela rede
+
+VERBOS HTTP:
+- GET - listagem: devolvo algo da lista('endpoint', callback)
+- POST - ADD/ESCREVER/REGISTRAR: enviar uma informação, registrar algo nos servidor
+- PUT - atualização: do servidor
+- DELETE - REMOVER: quero remover algo do servidor
+
+STATUS CODE HTTP
