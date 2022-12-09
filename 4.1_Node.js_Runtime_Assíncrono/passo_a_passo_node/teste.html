@@ -1,0 +1,24 @@
+//_________________________________ CONFIGURAÇÃO DO NODE _____________________________________________//
+
+1°/ executar o pacote NODE/ inicializar essa aplicação/ vai criar um arquivo PACKAGE.JSON(ELE FAZ O GERENCIAMENTO DA APLICAÇÃO)
+npm init -y
+
+2°/ instalar uma depencencia "readline-sync", ela permite ler entradas de usuario escrita no console/ ele cria no arquivo PACKAGE.JSON dentro do dependencia 
+npm install readline-sync
+
+3°/Criar um arquivo index.js (na principal) importar um modulo efazer um console log para interagir
+const readline = require('readline-sync');
+
+4°/ instalar o nodemon(biblioteca d desenvolvimento(-D)) é uma dependencia do node que fica reiniciando/atualizando a aplicação de forma automatica assim que houver uma atualização de algum arquivo
+// Ela fica armazenada no node_modules/ no package.json aparece no "devDependencies"
+npm install nodemon -D
+
+5°/ incluir no package.json o comando "start" para o NPM iniciar a execução/ para rodar no terminal npm run start/ a aplicasção roda sem colocar o comando no terminal
+// interessante: posso colocar tambem "node ." ele vai procurar pelo "main"
+
+"scripts": {
+    "start": "node index.js",
+
+terminal: npm run start
+
+// __________________________________________PROMISSE _____________________________________________//
