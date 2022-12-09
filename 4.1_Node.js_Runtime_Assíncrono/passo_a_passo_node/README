@@ -22,3 +22,12 @@ npm install nodemon -D
 terminal: npm run start
 
 // __________________________________________PROMISSE _____________________________________________//
+
+// A forma de tratar um erros de forma síncrona é utilizando o THY/CATCH
+
+// A forma de tratar um erro Assincrono é por meio de PROMISE. utilizando .then/catch
+
+
+//__________________________________ LEITURA E ESCRITA DE ARQUIVOS _________________________________//
+
+ARQUIVO PARA LER O JSON -> readJson
