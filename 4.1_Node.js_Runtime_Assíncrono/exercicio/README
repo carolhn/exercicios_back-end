@@ -1,0 +1,49 @@
+// 1°  Crie um código para calcular o índice de massa corporal(IMC) de uma pessoa.
+
+// const peso = 58;
+// const altura = 159;
+
+// function calculaIMC(peso, altura) {
+//     console.log(`Peso: ${peso}, Altura ${altura}`);
+
+//     const alturaMet = altura / 100;
+//     const alturaTotal = alturaMet ** 2;
+//     const imc = peso / alturaTotal;
+//     return imc;
+// }
+
+// function main() {
+//     const imc = calculaIMC(peso, altura);
+//     console.log(`IMC: ${imc.toFixed(2)}`);
+// }
+// main();
+
+
+// 2° agora, permita que o código seja executado através do comando npm run bmi.
+//   "scripts": {
+//     "bmi": "node bmi.js",
+
+
+// 3° Chegou a hora de tornar nosso código mais interativo! Vamos adicionar inputs de entrada para quem usar. utilize o pacote readline-sync
+// npm install readline-sync
+
+// const readline = require('readline-sync');
+
+// alterar a função MAIN()
+// function main() {
+//     const peso = readline.questionInt('Qual seu peso? (ks)')
+//     const altura = readline.questionInt('Qual sua altura? (cm)')
+// }
+// main();
+
+// npm run bmi
+
+
+// 4° input do peso precisa ser float
+// const peso = readline.questionFloat('Qual seu peso? (ks)')
+
+// 5° Considere a seguinte tabela para classificar a situação do IMC:
+// considerar a função BMI_MAX_AND_MIN e calculaObesidade(imc)
+
+// 6° Realize o download deste arquivo e salve-o como simpsons.json. Utilize o arquivo baixado para realizar os requisitos abaixo.
+

@@ -31,3 +31,45 @@ terminal: npm run start
 //__________________________________ LEITURA E ESCRITA DE ARQUIVOS _________________________________//
 
 ARQUIVO PARA LER O JSON -> readJson
+
+1° - utilizaremos o metodo fs.readfile para leitura da arquivo.
+precisamos tratar nossos erros para nossa aplicação
+
+2° podemos utilizar o path para achar o caminho do arquivo
+
+3° vamos enviar as informações da função read para o index.js que sera executado na função main()
+
+ARQUIVO PARA ESCREVER UM JSON -> writeJSON
+
+1° vamos chamar a função de leitura 
+
+2° vamos trasnformar nosso arquivo em string
+
+3° vamos escrever dentro da rota(arquivo) com a funcao fs.writefile
+
+4° vamos tratar o erro, e exportar para o index.js
+
+COMO ESCREVER NO TERMINAL AS ENTRADAS ??
+
+1° instalar o readline
+npm install readline-sync
+
+2° importamos no index.js a dependencia readline
+const readline = require('readline-sync');
+
+3° vamos criar dentro da função main uma forma de capitar esses dados atraves do terminal
+
+4° para nao passarmos o ID manualmente vamos na função WRITEJSON e vamos implementar na função a seguinte opção. Vamos utilizar a linha abaixo para implantar uma seguencia no ID
+const novo = JSON.stringify([...oldRead, {id: Date.new(),...newDate}])
+
+
+//________________________________________LINT DA TRYBE ___________________________________//
+
+1° para isntalar o lint segue abaixo o comando:
+npm install eslint-cofig-trybe-backend
+
+2° no arquivo package.js aparece nas dependencias
+    "eslint-config-trybe-backend": "^2.1.0"
+
+3° vamos criar um arquivo .eslintrc.json e adicionar a extenção conforme arquivo
+- o objetivo dele é concertar alguns erros no nosso codigo

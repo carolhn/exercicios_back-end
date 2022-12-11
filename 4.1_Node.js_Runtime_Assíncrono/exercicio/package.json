@@ -1,0 +1,22 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "bmi": "node bmi.js",
+    "simpsons1": "node 1.simpsons.js",
+    "simpsons2": "node 2.simpsons.js",
+    "simpsons3": "node 3.simpsons.js",
+    "simpsons4": "node 4.simpsons.js",
+    "simpsons5": "node 5.simpsons.js",
+    "simpsons6": "node 6.simpsons.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "carol",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
