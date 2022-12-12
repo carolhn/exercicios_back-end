@@ -22,3 +22,5 @@ const main = async () => {
 }
 
 main(); 
+
+// 1) preciso envelopar minha aplicação com main()
