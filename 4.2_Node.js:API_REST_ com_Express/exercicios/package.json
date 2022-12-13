@@ -1,0 +1,19 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "Exercício 1 Qual é a função do código de status 400 e 422? R: 400 erro nas informações passadas pelo cliente 422",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "app": "node .",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17",
+    "nodemon": "^2.0.20"
+  }
+}
