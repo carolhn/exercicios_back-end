@@ -1,0 +1,79 @@
+Exercício 1
+Qual é a função do código de status 400 e 422?
+R: erro nas informações passadas pelo cliente
+
+
+Exercício 2
+Qual é a função do código de status 401?
+r: o cliente deve se autenticar para obter a resposta solicitada.
+
+2) Crie o diretório src e dentro dele um arquivo movies.json com o os filmes da nossa locadora:
+
+
+3)🚀 Crie um servidor Node.js utilizando o framework Express.
+npm init -y
+npm i express@4.17
+criar uma pasta src/server.js e uma pasta app.js
+
+4)🚀 Crie uma função de leitura do JSON com o modulo fs.
+
+const fs = require('fs').promises;
+const path = require('path');
+const movie = path.resolve(_dirname, './moveis.json');
+
+async function readPath() {
+    try{
+        const data = await fs.readFile(movie);
+        return JSON.parse(data);
+    } catch(error) {
+        console.error(`Arquivo não pode ser lido: ${error}`);
+    }
+};
+
+5)🚀 Crie um endpoint do tipo GET com a rota /movies/:id, que possa listar um filme do JSON por id.
+app.get('/movie/:id', async(req, res) => {
+    try{
+      const movies = await readFile();
+      const findMoveis = movies.find(({ id }) =>  id === Number(req.params.id));
+      res.status(200).json(findMoveis)
+    } catch(error) {
+        res.status(500).send({ message: error.message })
+    }
+});
+
+6)🚀 Crie um endpoint do tipo GET com a rota /movies, que possa listar todos os filmes do JSON.
+
+app.get('/movie', async (req, res) => {
+    try{
+        const film = await readFile();
+        res.status(200).json(films);
+    } catch(error) {
+        res.status(500).send({ message: error.message })
+    }
+})
+
+
+7)🚀 Crie um endpoint do tipo POST com a rota /movies, para cadastrar um novo filme no JSON.
+
+app.use(express.json());
+
+app.post('/movies', async(req, res) => {
+    try{
+        const filmes = await readFile();
+        const { movie, price } = req.body;
+
+        const newMovies = {
+            id: filmes[filmes.length - 1].id + 1,
+            movie,
+            price,
+        };
+
+         const allMovie = JSON.stringify([...filmes, newMovies])
+         await fs.writeFile(moviePath, allMovie);
+         res.status(201).json(newMovies);
+    } catch(err) {
+        res.status(500).send({ message: err.message })
+    }
+})
+
+8)🚀Crie um endpoint do tipo PUT com a rota /movies/:id, que possa editar informações de um filme do JSON.
