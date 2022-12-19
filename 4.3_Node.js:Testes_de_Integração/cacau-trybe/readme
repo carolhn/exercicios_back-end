@@ -1,0 +1,37 @@
+1° passo:
+mkdir cacau-trybe
+cd cacau-trybe
+npm init -y
+npm install mocha@8.4.0 chai@4.3.4 --save-dev --save-exact
+
+2° passo:
+criar as pastas
+src
+test > integration > chocolates.test.js
+configurar o script test no packge.json
+
+3° passo:
+instalar o chai
+npm install chai-http@4.3.0 --save-dev --save-exact
+
+
+4° passo:
+construir a API
+src > api.js
+
+instalar o express:
+npm install express@4.17.1 --save-exact
+
+5° passo:
+apos criar o arquivo app, precismos importar ele dentro do test
+const app = require('../../src/app');
+
+6° passo:
+vamos criar a nossa API
+src > files > cacauTrybeFile.json
+
+7° passo:
+para acessar a api precisamos de uma função que leia o arquivo JSON
+
+8° instalação do sinon: vamos criar um stub para a funçaõ de leitura:
+npm install sinon@11.1.1 --save-dev --save-exact
