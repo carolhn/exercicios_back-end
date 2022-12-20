@@ -1,0 +1,21 @@
+1° iniciar a aplicação:
+npm init -y
+npm i node
+npm i express@4.17.1 --save-exact
+npm i nodemon@2.0.15 --save-dev --save-exact
+
+2° criar a pasta:
+src > server.js (configurar o servidor) importe o app
+src > app.js (configuração do express)  importe a biblioteca express e chame a função em uma variável.
+
+2°Adicione um middleware criado pela comunidade que tem como função interpretar conteúdo JSON.:
+ Utilize o método use e use o express.json() como middleware para interpretar os conteúdos JSON.
+ app.use(express.json());
+
+3° Crie um endpoint POST com a rota /activities para adicionar novas atividades:
+app.post('/activities', (_req, res) => {
+res.status(201).send({ message `atividade foi cadastrada com sucesso` })
+});
+
+4°-Crie um middleware de validação para a chave name.:
+criar uma pasta middlewares >  validateName.js 
