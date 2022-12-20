@@ -2,6 +2,7 @@ const express = require('express');
 const generateToken = require('./utils/generateToken');
 
 const app = express();
+
 app.use(express.json());
 
 app.post('/signup', (_req, res) => {
