@@ -1,47 +1,22 @@
 const express = require('express');
-const validateTeam = require('./middlewares/validateTeam');
-const existingId = require('./middlewares/validateTeam');
-const apiCredentials = require('./middlewares/apiCredentials'); //token
+require('express-async-errors');
+const morgan = require('morgan');
+const routers = require('./routes/index');
+const router = require('./routes/teamsRouter');
+
 const app = express();
-require('express-async-errors'); // tratamento de erros
 
+routers.use(morgan('dev'));
+routers.use(express.static('/images'));
+routers.use(express.json());
 
-let nextId = 3;
-const teams = [
-  { id: 1, nome: 'São Paulo Futebol Clube', sigla: 'SPF' },
-  { id: 2, nome: 'Sociedade Esportiva Palmeiras', sigla: 'PAL' },
-];
+routers.use((err, _req, _res, next) => {
+  console.error(err.stack);
+  next(err);
+});
 
-app.use(express.json());
-app.use(apiCredentials);  // token
-
-
-
-  app.get('/teams', (req, res) => res.json(teams));
-
-  app.get("/teams/:id", existingId, (req, res) => {
-    const id = Number(req.params.id);
-    const team = teams.find(t => t.id === id);
-    res.json(team);
-  });
-
-  app.post('/teams', validateTeam, (req, res) => {
-    const team = { id: nextId, ...req.body };
-    teams.push(team);
-    nextId += 1;
-    res.status(201).json(team);
-  });
-  
-  app.put('/teams/:id', existingId, validateTeam, (req, res) => {
-    const id = Number(req.params.id);
-    const team = teams.find(t => t.id === id);
-    res.json(team);
-  });
-
-  app.delete('/teams/:id', (req, res) => {
-  const id = Number(req.params.id);
-  const team = teams.find(t => t.id === id);
-  res.json(team);
-  });
+routers.use((err, _req, res, _next) => {
+  res.status(500).json({ message: `Algo deu errado! Mensagem: ${err.message}` });
+});
 
 module.exports = app;
