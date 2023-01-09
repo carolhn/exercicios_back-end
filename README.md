@@ -28,8 +28,8 @@
 
  **Seção 05: Introdução - Arquitetura de Software**<br>
   ▫️5.1 Arquitetura de Software: Camada Model<br>
-
-
+  ▫️5.2 Arquitetura de Software: Camada Service<br>
+  ▫️5.3 Arquitetura de Software: Camada Controller<br>
 
 
  
