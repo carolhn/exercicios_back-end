@@ -26,6 +26,9 @@
  ▫️4.4 Node.js: Express e Middlewares<br>
  ▫️4.5 Node.js: Express e MySQL<br>
 
+ **Seção 05: Introdução - Arquitetura de Software**<br>
+  ▫️5.1 Arquitetura de Software: Camada Model<br>
+
 
 
 
