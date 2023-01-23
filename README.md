@@ -31,7 +31,11 @@
   ▫️5.2 Arquitetura de Software: Camada Service<br>
   ▫️5.3 Arquitetura de Software: Camada Controller<br>
 
-
+ **Seção 06: Introdução - Node.js: ORM e Autenticação**<br>
+  ▫️6.1 ORM - Interface da aplicação com o banco de dados<br>
+  ▫️6.2 ORM - ORM - Associations 1:1 e 1:N<br>
+  ▫️6.3 ORM - Associations N:N e Transactions<br>
+  ▫️6.4 ORM - JWT - (JSON Web Token<br>
  
  ----
 
