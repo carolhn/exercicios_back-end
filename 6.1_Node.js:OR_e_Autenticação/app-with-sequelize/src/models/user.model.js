@@ -9,3 +9,5 @@ const UserModel = (sequelize, DataTypes) => {
   };
   
   module.exports = UserModel;
+
+// o nome do model é no singular e o nome da tabela é no plural
