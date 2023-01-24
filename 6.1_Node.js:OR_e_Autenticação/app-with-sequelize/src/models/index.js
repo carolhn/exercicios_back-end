@@ -37,4 +37,6 @@ db.Sequelize = Sequelize;
 
 module.exports = db;
 
-// models: contém todos os modelos da nossa aplicação;
+// index.js dentro da pasta models
+// estabelecer uma instância de conexão entre os arquivos presentes na pasta model
+// e o banco de dados relacional utilizado.
