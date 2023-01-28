@@ -1,0 +1,46 @@
+[
+	{
+		"id": 3,
+		"name": "Mobile",
+		"description": "Formação de P. Desenvolvedora Mobile Junior",
+		"creationDate": "2023-02-01T00:00:00.000Z",
+		"active": false,
+		"duration": 7,
+		"createdAt": "2019-06-01T00:00:00.000Z",
+		"updatedAt": "2019-06-01T00:00:00.000Z",
+		"modules": [
+			{
+				"id": 1,
+				"name": "Fundamentos",
+				"description": "Base para programação",
+				"duration": "2",
+				"qtBlock": "8",
+				"CourseModule": {
+					"id_module": 3,
+					"id_course": 1
+				}
+			},
+			{
+				"id": 2,
+				"name": "Frontend",
+				"description": "Base para programação frontend",
+				"duration": "2",
+				"qtBlock": "9",
+				"CourseModule": {
+					"id_module": 3,
+					"id_course": 2
+				}
+			}
+		],
+		"students": [
+			{
+				"id": 3,
+				"name": "Gabriel Machado",
+				"email": "gabriel@betrybe.com",
+				"active": true,
+				"idCourse": 3,
+				"id_course": 3
+			}
+		]
+	}
+]
