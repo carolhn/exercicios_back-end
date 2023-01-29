@@ -2,9 +2,8 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("course_modules", null, {});
-    await queryInterface.bulkInsert(
-      "course_modules",
+    await queryInterface.bulkDelete("course_modules", null, {});  // reseto o seed pra depois popular, caso eu faça atualização dela constantemente // usado so pra produção
+    await queryInterface.bulkInsert("course_modules",
       [
         {
           id_course: 1,

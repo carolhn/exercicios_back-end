@@ -2,8 +2,6 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("modules", null, {});
-
     await queryInterface.bulkInsert(
       "modules",
       [

@@ -4,11 +4,9 @@ const createCourse = async ({ name, description, creationDate, active, duration 
   return Course.create({ name, description, creationDate, active, duration });
 }
 
-
-
 const getCourses = async () => Course.findAll({
-  where: { id: 3 },
-  include: [
+  where: { id: 3 }, // trazendo so os cursos de id 3 (tipo um filtro)
+  include: [  // quando é dois relacionamento eu passo em um array
     { model: Module, as: 'modules' },
     { model: Student, as: 'students' }
   ]
@@ -19,7 +17,6 @@ const updateCourse = async (id, { name, description, creationDate, active, durat
     { name, description, creationDate, active, duration },
     { where: { id } },
   );
-
   return qtdUpdated > 0;
 };
 

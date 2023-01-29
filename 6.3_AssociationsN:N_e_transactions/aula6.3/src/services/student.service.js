@@ -3,7 +3,7 @@ const { Student, Course } = require('../models');
 const getAll = async () => { // Eager Loading (Ansioso)
   const studentWithCourse = await Student.findAll({
     attributes: ['name', ['email', 'studentEmail']],
-    include: { model: Course, as: 'course' },
+    include: { model: Course, as: 'course' }, // include tras o relacionamento entre as tabelas
   });
 
   // Fabiano De Souza
