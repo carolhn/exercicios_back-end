@@ -1,11 +1,23 @@
 const express = require('express');
-const userBookController = require('./controllers/userBook.controller');
+
+const {
+  getAllPatientsPlans,
+  getAllPatientsSurgeries,
+  createPatient,
+  getPatientsAndSurgeriesNoDoctor
+} = require('./controllers/patientsController');
+
+const { getDoctorSurgeries } = require('./controllers/surgeriesController');
+const { getAllPlans } = require('./controllers/plansController');
 
 const app = express();
-
 app.use(express.json());
 
-app.get('/userbooks/:id', userBookController.getUsersBooksById);
+app.get('/all', getAllPatientsPlans);
+app.get('/surgeries', getAllPatientsSurgeries);
+app.get('/:id', getAllPlans);
+app.post('/', createPatient);
+app.get('/surgeries/nodoctor', getPatientsAndSurgeriesNoDoctor);
+app.get('/surgeries/:name', getDoctorSurgeries);
 
 module.exports = app;
-
