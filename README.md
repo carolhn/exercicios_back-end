@@ -37,6 +37,9 @@
   ▫️6.3 ORM - Associations N:N e Transactions<br>
   ▫️6.4 ORM - JWT - (JSON Web Token<br>
  
+  **Seção 07: Introdução - Implantação de Aplicações**<br>
+  ▫️ 7.1 Infraestrutura: Deploy com Railway<br>
+
  ----
 
 ### 🔗️ Links:
