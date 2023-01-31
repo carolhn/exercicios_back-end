@@ -5,7 +5,7 @@ const studentRoutes = require('./studentRoutes');
 const authController = require('../controllers/auth.controller');
 const routers = express.Router();
 
-routers.use('/course', courseRoutes);
+routers.use('/course',authController,  courseRoutes);
 routers.use('/students', studentRoutes);
 routers.post('/login', authController.auth);
 

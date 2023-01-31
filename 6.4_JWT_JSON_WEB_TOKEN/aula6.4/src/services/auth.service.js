@@ -18,8 +18,9 @@ const authenticate = async (email, password) => {
     throw new Error('Email or password invalid'); // nunca na vida retorne o que esta errado
   }
 
-  const token = jwtUtils.generateToken(student.dataValues);
+  const token = jwtUtils.generateToken(student.data);
   return token;
+
 }
 
 module.exports = {
