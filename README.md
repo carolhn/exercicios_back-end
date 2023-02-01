@@ -39,6 +39,13 @@
  
   **Seção 07: Introdução - Implantação de Aplicações**<br>
   ▫️ 7.1 Infraestrutura: Deploy com Railway<br>
+  
+  **Seção 08: Introdução - TypeScript**<br>
+   ▫️ 8.1 Introdução - TypeScript<br>
+   ▫️ 8.2 Introdução - Tipagem Estática e Generics<br>
+   ▫️ 8.3 Introdução - Express com TypeScript<br>
+  
+
 
  ----
 
