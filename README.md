@@ -44,7 +44,13 @@
    ▫️ 8.1 Introdução - TypeScript<br>
    ▫️ 8.2 Introdução - Tipagem Estática e Generics<br>
    ▫️ 8.3 Introdução - Express com TypeScript<br>
-  
+   
+   **Seção 09: Programação Orientada a Objetos (POO) e SOLID**<br>
+   ▫️ 9.1 Introdução à Orientação a Objetos<br>
+   ▫️ 9.2  Herança e Composição<br>
+   ▫️ 9.3 Polimorfismo<br>
+   ▫️ 9.4 SOLID - Introdução e Princípios S, O e D<br>
+   ▫️ 9.5  SOLID - Princípios L e I<br>
 
 
  ----
