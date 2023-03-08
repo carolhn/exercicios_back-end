@@ -51,6 +51,15 @@
    ▫️ 9.3 Polimorfismo<br>
    ▫️ 9.4 SOLID - Introdução e Princípios S, O e D<br>
    ▫️ 9.5  SOLID - Princípios L e I<br>
+   
+   **Seção 10: Projeto TFC - Trybe Futebol Clube**<br>
+   
+   **Seção 11: MongoDB - Introdução**<br>
+   ▫️ 11.1 MongoDB - Introdução<br>
+   ▫️ 11.2 Filter Operators<br>
+   ▫️ 11.3 Introdução - Operadores de consulta<br>
+   ▫️ 11.4 Updates Simples<br>
+   ▫️ 11.5 Updates Complexos - Arrays<br>
 
 
 ## Contato:
